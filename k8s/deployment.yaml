@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-gitops-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: python-gitops-app
+  template:
+    metadata:
+      labels:
+        app: python-gitops-app
+    spec:
+      containers:
+        - name: python-gitops-app
+          image: ghcr.io/betkibet/python-gitops-app:v1
+          ports:
+            - containerPort: 8000
