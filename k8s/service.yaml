@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: python-gitops-app
 spec:
+  type: NodePort
   selector:
     app: python-gitops-app
   ports:
