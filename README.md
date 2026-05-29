@@ -24,3 +24,5 @@
 8. Access the App
 >> kubectl port-forward svc/python-gitops-app 8000:80
 >> Ensure package visibility in GitHub is set to public to ensure deployment succeeds and pod starts correctly.
+9. Create GitHub actions yaml to automate deployment to registry.
+>> Navigate to Actions tab on GitHub to create the actions file. 
