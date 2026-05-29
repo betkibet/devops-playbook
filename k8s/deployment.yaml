@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: python-gitops-app
-          image: ghcr.io/betkibet/python-gitops-app:v1
+          image: ghcr.io/betkibet/devops-playbook:8c1ebbd86bd60355a8c4e6b48d7e505089a4ef1d
           ports:
             - containerPort: 8000
