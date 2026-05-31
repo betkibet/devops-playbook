@@ -31,7 +31,7 @@ jobs:
           context: .
           push: true
           platforms: linux/amd64,linux/arm64
-          tags: ghcr.io/${{ github.repository }}:latest
+          tags: ghcr.io/${{ github.repository }}:${{ github.sha }}
       - name: Update manifest
         run: |
-          sed -i 's|image:.*|image: ghcr.io/${{ github.repository }}:latest|' k8s/deployment.yaml
+          sed -i 's|image:.*|image: ghcr.io/${{ github.repository }}:${{ github.sha }}|' k8s/deployment.yaml
