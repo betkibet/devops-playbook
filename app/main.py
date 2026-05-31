@@ -4,7 +4,7 @@ app = FastAPI()
 
 @app.get("/")
 def root():
-    return {"message": "Trial 4 done"}
+    return {"message": "Trial 5 done"}
 
 @app.post("/test")
 def root():
